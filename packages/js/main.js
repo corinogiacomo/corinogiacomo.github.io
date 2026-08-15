@@ -68,8 +68,8 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".portfolio__container", {
+/*==================== WORK SWIPER  ====================*/
+let swiperWork = new Swiper(".work__container", {
   cssMode: true,
   loop: true,
 

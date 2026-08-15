@@ -12,9 +12,8 @@ window.TRANSLATIONS = {
 
     nav: {
       home: "Home",
-      about: "About",
+      work: "Work",
       skills: "Skills",
-      portfolio: "Portfolio",
       contact: "Contact",
     },
 
@@ -25,17 +24,6 @@ window.TRANSLATIONS = {
         "Short introduction about yourself, your experience and the kind of work you deliver.",
       contact: "Contact Me",
       scroll: "Scroll Down",
-    },
-
-    about: {
-      title: "About Me",
-      subtitle: "My Introduction",
-      description:
-        "Write a few sentences about your background, the tools you work with and what you enjoy building. Replace this placeholder text with your own introduction.",
-      experience: "Years <br> experience",
-      projects: "Completed <br> projects",
-      companies: "Companies<br>worked",
-      cv: "Download CV",
     },
 
     skills: {
@@ -81,8 +69,8 @@ window.TRANSLATIONS = {
       present: "Year - Present",
     },
 
-    portfolio: {
-      title: "Portfolio",
+    work: {
+      title: "Work",
       subtitle: "Most recent works",
       description:
         "Short description of the project, the problem it solves and the technologies used to build it.",
@@ -114,7 +102,7 @@ window.TRANSLATIONS = {
     },
 
     footer: {
-      portfolio: "Portfolio",
+      work: "Work",
       contact: "Contact",
       copy: "© Your Name. All rights reserved.",
     },
@@ -132,9 +120,8 @@ window.TRANSLATIONS = {
 
     nav: {
       home: "ホーム",
-      about: "私について",
+      work: "実績",
       skills: "スキル",
-      portfolio: "ポートフォリオ",
       contact: "お問い合わせ",
     },
 
@@ -145,17 +132,6 @@ window.TRANSLATIONS = {
         "自己紹介、これまでの経験、提供できる仕事について簡潔に記載します。",
       contact: "お問い合わせ",
       scroll: "スクロール",
-    },
-
-    about: {
-      title: "私について",
-      subtitle: "自己紹介",
-      description:
-        "経歴、使用しているツール、制作で大切にしていることなどを数行で書きます。このプレースホルダーのテキストをご自身の紹介文に置き換えてください。",
-      experience: "経験<br>年数",
-      projects: "完了した<br>プロジェクト",
-      companies: "在籍した<br>企業",
-      cv: "履歴書をダウンロード",
     },
 
     skills: {
@@ -201,8 +177,8 @@ window.TRANSLATIONS = {
       present: "年 - 現在",
     },
 
-    portfolio: {
-      title: "ポートフォリオ",
+    work: {
+      title: "実績",
       subtitle: "最近の制作物",
       description:
         "プロジェクトの概要、解決した課題、使用した技術を簡潔に記載します。",
@@ -234,7 +210,7 @@ window.TRANSLATIONS = {
     },
 
     footer: {
-      portfolio: "ポートフォリオ",
+      work: "実績",
       contact: "お問い合わせ",
       copy: "© あなたの名前. All rights reserved.",
     },
