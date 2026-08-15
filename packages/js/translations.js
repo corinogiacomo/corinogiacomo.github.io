@@ -21,7 +21,7 @@ window.TRANSLATIONS = {
     home: {
       title: "Hi, I'm Giacomo",
       description:
-        "Short introduction about yourself, your experience and the kind of work you deliver.",
+        "Originally from Italy, now living in Japan for the past 7 years. Making games and playing them.",
       contact: "Contact Me",
       scroll: "Scroll Down",
     },
@@ -143,7 +143,7 @@ window.TRANSLATIONS = {
       title:
         '<span class="phrase">こんにちは、</span><span class="phrase">ジャコモです</span>',
       description:
-        "自己紹介、これまでの経験、提供できる仕事について簡潔に記載します。",
+        "イタリア出身、来日7年目のゲーム開発者。ゲームの制作とプレイに励んでいます。",
       contact: "お問い合わせ",
       scroll: "スクロール",
     },
