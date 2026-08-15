@@ -29,27 +29,28 @@ window.TRANSLATIONS = {
     skills: {
       title: "Skills",
       subtitle: "My technical level",
-      years: "More than 0 years",
-      cat1: {
-        title: "Skill Category One",
-        s1: "Skill One",
-        s2: "Skill Two",
-        s3: "Skill Three",
-        s4: "Skill Four",
+      duration: {
+        y1: "1 year",
+        y2: "2 years",
+        y3: "3 years",
+        y4: "4 years",
+        y6: "6 years",
       },
-      cat2: {
-        title: "Skill Category Two",
-        s1: "Skill One",
-        s2: "Skill Two",
-        s3: "Skill Three",
-        s4: "Skill Four",
+      languages: {
+        title: "Programming Languages",
       },
-      cat3: {
-        title: "Skill Category Three",
-        s1: "Skill One",
-        s2: "Skill Two",
-        s3: "Skill Three",
-        s4: "Skill Four",
+      engines: {
+        title: "Game Engines",
+      },
+      qa: {
+        title: "Development & QA",
+        unit: "Unit Testing",
+        integration: "Integration Testing",
+        testCode: "Test Code Creation",
+        performance: "Performance Tuning",
+      },
+      tools: {
+        title: "Tools & Infrastructure",
       },
     },
 
@@ -149,27 +150,28 @@ window.TRANSLATIONS = {
     skills: {
       title: "スキル",
       subtitle: "技術レベル",
-      years: "0年以上",
-      cat1: {
-        title: "スキルカテゴリ 1",
-        s1: "スキル 1",
-        s2: "スキル 2",
-        s3: "スキル 3",
-        s4: "スキル 4",
+      duration: {
+        y1: "1年",
+        y2: "2年",
+        y3: "3年",
+        y4: "4年",
+        y6: "6年",
       },
-      cat2: {
-        title: "スキルカテゴリ 2",
-        s1: "スキル 1",
-        s2: "スキル 2",
-        s3: "スキル 3",
-        s4: "スキル 4",
+      languages: {
+        title: "プログラミング言語",
       },
-      cat3: {
-        title: "スキルカテゴリ 3",
-        s1: "スキル 1",
-        s2: "スキル 2",
-        s3: "スキル 3",
-        s4: "スキル 4",
+      engines: {
+        title: "ゲームエンジン",
+      },
+      qa: {
+        title: "開発・品質保証",
+        unit: "単体テスト",
+        integration: "結合テスト",
+        testCode: "テストコード作成",
+        performance: "パフォーマンスチューニング",
+      },
+      tools: {
+        title: "ツール・インフラ",
       },
     },
 
