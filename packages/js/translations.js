@@ -2,12 +2,13 @@
 window.TRANSLATIONS = {
   en: {
     meta: {
-      title: "Portfolio Template",
+      title: "Corino Giacomo — Game Developer",
     },
 
     common: {
-      name: "Your Name",
-      role: "Your Job Title",
+      name: "Giacomo",
+      fullName: "Corino Giacomo",
+      role: "Game Developer",
     },
 
     nav: {
@@ -18,8 +19,7 @@ window.TRANSLATIONS = {
     },
 
     home: {
-      title: "Hi, I'm Your Name",
-      subtitle: "Your Job Title",
+      title: "Hi, I'm Giacomo",
       description:
         "Short introduction about yourself, your experience and the kind of work you deliver.",
       contact: "Contact Me",
@@ -58,15 +58,35 @@ window.TRANSLATIONS = {
       subtitle: "My personal journey",
       education: "Education",
       work: "Work",
-      degree: "Degree or Course Name",
-      school: "School Name - City",
-      certification: "Certification Name",
-      issuer: "Issuer - Online",
-      job: "Job Title",
-      company: "Company Name - City",
-      years: "Year - Year",
-      year: "Year",
-      present: "Year - Present",
+      edu1: {
+        title: "High School",
+        school: "Istituto Tecnico Ettore Majorana - Italy",
+        date: "2013 - 2018",
+      },
+      edu2: {
+        title: "Japanese Language",
+        school: "京進ランゲージアカデミー京都中央 - Kyoto",
+        date: "Jul 2019 - Mar 2020",
+      },
+      edu3: {
+        title: "Computer Programming, Game Development",
+        school: "東京デザインテクノロジーセンター専門学校 - Tokyo",
+        date: "Apr 2021 - Apr 2024",
+      },
+      job1: {
+        title: "Web Programmer",
+        company: "Ni.Co S.r.l - Turin, Italy",
+        description:
+          "Internship. Web programmer for a bank surveillance application.",
+        date: "Dec 2018 - May 2019",
+      },
+      job2: {
+        title: "Game Programmer",
+        company: "Mankind Games - Tokyo, Japan",
+        description:
+          "Game programmer working with Unity3D and Unreal Engine 4.",
+        date: "Apr 2024 - Present",
+      },
     },
 
     work: {
@@ -80,42 +100,35 @@ window.TRANSLATIONS = {
       demo: "Demo",
     },
 
-    project: {
-      title: "You have a new project?",
-      description:
-        "Call to action text goes here. Invite visitors to get in touch about their next project.",
-      button: "Contact me",
-    },
-
     contact: {
       title: "Contact me",
       subtitle: "Get in touch",
-      phone: "Call me",
       email: "E-mail",
       location: "Location",
-      locationValue: "City, Country",
+      locationValue: "Tokyo, Japan",
       formName: "Name",
       formEmail: "E-mail",
       formSubject: "Subject",
-      formDescription: "Description",
+      formDescription: "Message",
       send: "Send message",
     },
 
     footer: {
       work: "Work",
       contact: "Contact",
-      copy: "© Your Name. All rights reserved.",
+      copy: "© Corino Giacomo. All rights reserved.",
     },
   },
 
   ja: {
     meta: {
-      title: "ポートフォリオ テンプレート",
+      title: "コリノ ジャコモ — ゲーム開発者",
     },
 
     common: {
-      name: "あなたの名前",
-      role: "あなたの職種",
+      name: "ジャコモ",
+      fullName: "コリノ ジャコモ",
+      role: "ゲーム開発者",
     },
 
     nav: {
@@ -126,8 +139,7 @@ window.TRANSLATIONS = {
     },
 
     home: {
-      title: "こんにちは、あなたの名前です",
-      subtitle: "あなたの職種",
+      title: "こんにちは、ジャコモです",
       description:
         "自己紹介、これまでの経験、提供できる仕事について簡潔に記載します。",
       contact: "お問い合わせ",
@@ -166,15 +178,35 @@ window.TRANSLATIONS = {
       subtitle: "これまでの歩み",
       education: "学歴",
       work: "職歴",
-      degree: "学位・コース名",
-      school: "学校名 - 都市",
-      certification: "資格名",
-      issuer: "発行機関 - オンライン",
-      job: "職種名",
-      company: "会社名 - 都市",
-      years: "年 - 年",
-      year: "年",
-      present: "年 - 現在",
+      edu1: {
+        title: "高等学校",
+        school: "Istituto Tecnico Ettore Majorana - イタリア",
+        date: "2013年 - 2018年",
+      },
+      edu2: {
+        title: "日本語",
+        school: "京進ランゲージアカデミー京都中央 - 京都",
+        date: "2019年7月 - 2020年3月",
+      },
+      edu3: {
+        title: "コンピュータプログラミング・ゲーム開発",
+        school: "東京デザインテクノロジーセンター専門学校 - 東京",
+        date: "2021年4月 - 2024年4月",
+      },
+      job1: {
+        title: "Webプログラマー",
+        company: "Ni.Co S.r.l - トリノ、イタリア",
+        description:
+          "インターンシップ。銀行の監視アプリケーションのWebプログラマー。",
+        date: "2018年12月 - 2019年5月",
+      },
+      job2: {
+        title: "ゲームプログラマー",
+        company: "Mankind Games - 東京、日本",
+        description:
+          "Unity3DとUnreal Engine 4を使用するゲームプログラマー。",
+        date: "2024年4月 - 現在",
+      },
     },
 
     work: {
@@ -188,20 +220,12 @@ window.TRANSLATIONS = {
       demo: "デモ",
     },
 
-    project: {
-      title: "新しいプロジェクトをお考えですか？",
-      description:
-        "行動を促すテキストを記載します。次のプロジェクトについてお気軽にご相談ください。",
-      button: "お問い合わせ",
-    },
-
     contact: {
       title: "お問い合わせ",
       subtitle: "ご連絡はこちら",
-      phone: "電話",
       email: "メール",
       location: "所在地",
-      locationValue: "都市、国",
+      locationValue: "東京、日本",
       formName: "お名前",
       formEmail: "メールアドレス",
       formSubject: "件名",
@@ -212,7 +236,7 @@ window.TRANSLATIONS = {
     footer: {
       work: "実績",
       contact: "お問い合わせ",
-      copy: "© あなたの名前. All rights reserved.",
+      copy: "© コリノ ジャコモ. All rights reserved.",
     },
   },
 };

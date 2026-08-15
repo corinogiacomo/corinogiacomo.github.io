@@ -372,10 +372,14 @@ img {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #ffff;
+  color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -386,15 +390,6 @@ img {
   font-size: 1.2rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
-}
-
-.button--white {
-  background-color: #fff;
-  color: var(--first-color);
-}
-
-.button--white:hover {
-  background-color: #fff;
 }
 
 .button--flex {
@@ -584,6 +579,13 @@ img {
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.qualification__description {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
   margin-bottom: var(--mb-1);
 }
 
@@ -680,35 +682,6 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-
-.project__bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
-  color: #fff;
-}
-
-.project__img {
-  width: 232px;
-  justify-self: center;
-}
-
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
@@ -755,6 +728,11 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+/* Spam trap: hidden from people, tempting to bots */
+.contact__honeypot {
+  display: none;
 }
 
 /*==================== FOOTER ====================*/
@@ -902,11 +880,6 @@ img {
   .qualification__data {
     gap: 0.5rem;
   }
-
-  .project__img {
-    width: 200px;
-  }
-
 }
 
 /* For medium devices */
@@ -925,7 +898,6 @@ img {
 
   .skills_container,
   .work__content,
-  .project__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -1018,22 +990,6 @@ img {
     .work__content {
       align-items: center;
     }
-    .project {
-      text-align: initial;
-    }
-    .project__bg {
-      background: none;
-    }
-    .project__container {
-      background-color: var(--first-color-second);
-      border-radius: 1rem;
-      padding: 3rem 2.5rem 0;
-      grid-template-columns: 1fr max-content;
-      column-gap: 3rem;
-    }
-    .project__data {
-      padding-top: 0.8rem;
-    }
     .footer__container {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -1073,10 +1029,6 @@ img {
   }
   .work__content {
     column-gap: 5rem;
-  }
-
-  .project__container {
-    padding-bottom: 30px;
   }
 
   .swiper-work-icon {
