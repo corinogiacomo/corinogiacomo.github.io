@@ -136,6 +136,19 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  text-wrap: balance;
+}
+
+/*========== Line breaking ==========*/
+/* i18n.js sets html[lang], so these apply only while Japanese is active */
+:root[lang="ja"] {
+  line-break: strict;
+  word-break: auto-phrase;
+}
+
+/* Wrap a phrase in .phrase to forbid breaking inside it */
+.phrase {
+  display: inline-block;
 }
 
 ul {
@@ -512,50 +525,59 @@ img {
   margin-right: var(--mb-0-25);
 }
 
+/* minmax(0, 1fr) keeps the side columns even; a plain 1fr would let a long
+   unbreakable name widen its column and push the timeline off centre */
 .qualification__data {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: minmax(0, 1fr) max-content minmax(0, 1fr);
   column-gap: 1.5rem;
 }
 
 .qualification__title {
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  overflow-wrap: anywhere;
 }
 
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
+  color: var(--text-color);
   margin-bottom: var(--mb-0-5);
 }
 
 .qualification__description {
   display: block;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
-  margin-bottom: var(--mb-1);
+  color: var(--text-color);
+  margin-bottom: var(--mb-0-5);
 }
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-  /* margin-bottom: var(--mb-1) */
+  color: var(--text-color);
+  margin-bottom: var(--mb-2);
+}
+
+/* The line flexes to whatever height the entry needs */
+.qualification__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .qualification__rounder {
-  display: inline-block;
   width: 13px;
   height: 13px;
   background-color: var(--first-color);
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .qualification__line {
-  display: block;
   width: 1px;
-  height: 100%;
+  flex: 1;
   background-color: var(--first-color);
-  transform: translate(6px, -7px);
 }
 
 .qualification__content[data-content] {
