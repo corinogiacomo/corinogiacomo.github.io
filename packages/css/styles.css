@@ -330,8 +330,17 @@ img {
   fill: var(--first-color);
 }
 
+/* Profile photo framing. Adjust these three only:
+   --zoom     1 = fit, higher = closer in
+   --shift-x  positive moves the photo right
+   --shift-y  positive moves the photo down */
 .home__blob-img {
-  width: 220px;
+  --zoom: 1.15;
+  --shift-x: 0%;
+  --shift-y: 0%;
+  transform: translate(var(--shift-x), var(--shift-y)) scale(var(--zoom));
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .home__data {
