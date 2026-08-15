@@ -7,9 +7,6 @@
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
-
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
@@ -116,74 +113,13 @@
             <!--==================== WORK ====================-->
             <section class="work section" id="work">
                 <h2 class="section__title" data-i18n="work.title">Work</h2>
-                <span class="section__subtitle" data-i18n="work.subtitle">Most recent works</span>
 
-                <div class="work__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== WORK 1 ====================-->
-                        <div class="work__content grid swiper-slide">
-                            <div class="work__img img-placeholder"></div>
-
-                            <div>
-                                <h3 class="work__title" data-i18n="work.p1">Project One</h3>
-                                <p class="work__description" data-i18n="work.description">Short description of the project, the problem it solves
-                                    and the technologies used to build it.</p>
-                                <a href="#" class="button button--flex button--small work__button">
-                                    <span data-i18n="work.demo">Demo</span>
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== WORK 2 ====================-->
-                        <div class="work__content grid swiper-slide">
-                            <div class="work__img img-placeholder"></div>
-
-                            <div>
-                                <h3 class="work__title" data-i18n="work.p2">Project Two</h3>
-                                <p class="work__description" data-i18n="work.description">Short description of the project, the problem it solves
-                                    and the technologies used to build it.</p>
-                                <a href="#" class="button button--flex button--small work__button">
-                                    <span data-i18n="work.demo">Demo</span>
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== WORK 3 ====================-->
-                        <div class="work__content grid swiper-slide">
-                            <div class="work__img img-placeholder"></div>
-
-                            <div>
-                                <h3 class="work__title" data-i18n="work.p3">Project Three</h3>
-                                <p class="work__description" data-i18n="work.description">Short description of the project, the problem it solves
-                                    and the technologies used to build it.</p>
-                                <a href="#" class="button button--flex button--small work__button">
-                                    <span data-i18n="work.demo">Demo</span>
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- add arrows-->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-work-icon"></i>
-                    </div>
-
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-work-icon"></i>
-                    </div>
-
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
+                <div class="work__container container grid" id="work-grid"></div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
                 <h2 class="section__title" data-i18n="skills.title">Skills</h2>
-                <span class="section__subtitle" data-i18n="skills.subtitle">My technical level</span>
 
                 <div class="skills__container container grid">
                     <div>
@@ -370,7 +306,6 @@
               <!--==================== QUALIFICATION ====================-->
         <section class="qualification__section">
             <h2 class="section__title" data-i18n="qualification.title">Qualification</h2>
-            <span class="section__subtitle" data-i18n="qualification.subtitle">My personal journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
@@ -489,7 +424,6 @@
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title" data-i18n="contact.title">Contact me</h2>
-            <span class="section__subtitle" data-i18n="contact.subtitle">Get in touch</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -588,14 +522,16 @@
     </a>
 
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
-
     <!--==================== I18N ====================-->
     <script src="./packages/js/translations.js"></script>
     <script src="./packages/js/i18n.js"></script>
 
+    <!--==================== CONTENT ====================-->
+    <script src="./packages/js/projects.js"></script>
+    <script src="./packages/js/work.js"></script>
+
     <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/nav.js"></script>
     <script src="./packages/js/main.js"></script>
 </body>
 

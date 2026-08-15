@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+
+        <title>Corino Giacomo — Game Developer</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="./index.html" class="nav__logo" data-i18n="common.name">Giacomo</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="./index.html#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i><span data-i18n="nav.home">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#work" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i><span data-i18n="nav.work">Work</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i><span data-i18n="nav.skills">Skills</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./index.html#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i><span data-i18n="nav.contact">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Language switch -->
+                    <div class="lang-switch" role="group" aria-label="Language">
+                        <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+                        <button type="button" class="lang-switch__btn" data-lang="ja">JP</button>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <section class="section container">
+                <article class="project__body" id="project">
+                    <a href="./index.html#work" class="project__back">
+                        <i class="uil uil-arrow-left"></i>
+                        <span data-i18n="project.back">Back to work</span>
+                    </a>
+
+                    <div class="project__thumb" id="project-thumb"></div>
+
+                    <h1 class="project__title" id="project-title"></h1>
+
+                    <p class="project__meta">
+                        <span id="project-category"></span>
+                        <span id="project-year"></span>
+                    </p>
+
+                    <p class="project__description" id="project-description"></p>
+
+                    <a class="button button--flex" id="project-link" target="_blank" rel="noopener" hidden>
+                        <span data-i18n="project.visit">Visit project</span>
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                </article>
+
+                <p id="project-not-found" data-i18n="project.notFound" hidden>Project not found.</p>
+            </section>
+        </main>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== I18N ====================-->
+    <script src="./packages/js/translations.js"></script>
+    <script src="./packages/js/i18n.js"></script>
+
+    <!--==================== CONTENT ====================-->
+    <script src="./packages/js/projects.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/nav.js"></script>
+    <script src="./packages/js/project-page.js"></script>
+</body>
+
+</html>

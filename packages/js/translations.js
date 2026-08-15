@@ -28,7 +28,6 @@ window.TRANSLATIONS = {
 
     skills: {
       title: "Skills",
-      subtitle: "My technical level",
       duration: {
         y1: "1 year",
         y2: "2 years",
@@ -56,7 +55,6 @@ window.TRANSLATIONS = {
 
     qualification: {
       title: "Qualification",
-      subtitle: "My personal journey",
       education: "Education",
       work: "Work",
       edu1: {
@@ -92,18 +90,48 @@ window.TRANSLATIONS = {
 
     work: {
       title: "Work",
-      subtitle: "Most recent works",
-      description:
-        "Short description of the project, the problem it solves and the technologies used to build it.",
-      p1: "Project One",
-      p2: "Project Two",
-      p3: "Project Three",
-      demo: "Demo",
+      categories: {
+        vr: "VR Games",
+        mobile: "Mobile Games / Apps",
+        jam: "Game Jams",
+      },
+      projects: {
+        "vr-project-1": {
+          title: "VR Project",
+          description:
+            "What the project is, your role on it, and the technologies used to build it.",
+        },
+        "mobile-project-1": {
+          title: "Mobile Project One",
+          description:
+            "What the project is, your role on it, and the technologies used to build it.",
+        },
+        "mobile-project-2": {
+          title: "Mobile Project Two",
+          description:
+            "What the project is, your role on it, and the technologies used to build it.",
+        },
+        "mobile-project-3": {
+          title: "Mobile Project Three",
+          description:
+            "What the project is, your role on it, and the technologies used to build it.",
+        },
+        "jam-project-1": {
+          title: "Game Jam Project",
+          description:
+            "What the project is, your role on it, and the technologies used to build it.",
+        },
+      },
+    },
+
+    project: {
+      back: "Back to work",
+      visit: "Visit project",
+      notFound: "Project not found.",
     },
 
     contact: {
       title: "Contact me",
-      subtitle: "Get in touch",
       email: "E-mail",
       location: "Location",
       locationValue: "Tokyo, Japan",
@@ -150,7 +178,6 @@ window.TRANSLATIONS = {
 
     skills: {
       title: "スキル",
-      subtitle: "技術レベル",
       duration: {
         y1: "1年",
         y2: "2年",
@@ -178,7 +205,6 @@ window.TRANSLATIONS = {
 
     qualification: {
       title: "経歴",
-      subtitle: "これまでの歩み",
       education: "学歴",
       work: "職歴",
       edu1: {
@@ -214,18 +240,48 @@ window.TRANSLATIONS = {
 
     work: {
       title: "実績",
-      subtitle: "最近の制作物",
-      description:
-        "プロジェクトの概要、解決した課題、使用した技術を簡潔に記載します。",
-      p1: "プロジェクト 1",
-      p2: "プロジェクト 2",
-      p3: "プロジェクト 3",
-      demo: "デモ",
+      categories: {
+        vr: "VRゲーム",
+        mobile: "モバイルゲーム・アプリ",
+        jam: "ハッカソン",
+      },
+      projects: {
+        "vr-project-1": {
+          title: "VRプロジェクト",
+          description:
+            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
+        },
+        "mobile-project-1": {
+          title: "モバイルプロジェクト 1",
+          description:
+            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
+        },
+        "mobile-project-2": {
+          title: "モバイルプロジェクト 2",
+          description:
+            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
+        },
+        "mobile-project-3": {
+          title: "モバイルプロジェクト 3",
+          description:
+            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
+        },
+        "jam-project-1": {
+          title: "ハッカソン作品",
+          description:
+            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
+        },
+      },
+    },
+
+    project: {
+      back: "実績一覧へ戻る",
+      visit: "プロジェクトを見る",
+      notFound: "プロジェクトが見つかりませんでした。",
     },
 
     contact: {
       title: "お問い合わせ",
-      subtitle: "ご連絡はこちら",
       email: "メール",
       location: "所在地",
       locationValue: "東京、日本",

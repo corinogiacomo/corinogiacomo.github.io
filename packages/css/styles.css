@@ -172,17 +172,8 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-2);
-}
-
-.section__title,
-.section__subtitle {
   text-align: center;
+  margin-bottom: var(--mb-2);
 }
 
 /*==================== LAYOUT ====================*/
@@ -603,63 +594,137 @@ img {
 
 /*==================== WORK ====================*/
 .work__container {
-  overflow: initial;
+  row-gap: 3rem;
 }
 
-.work__content {
-  padding: 0 1.5rem;
+.work__group {
+  display: grid;
+  row-gap: var(--mb-1-5);
 }
 
-.work__img {
-  width: 265px;
-  border-radius: 0.5rem;
-  justify-self: center;
-}
-
-.work__title {
+.work__category {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
+  text-align: center;
 }
 
-.work__description {
-  margin-bottom: var(--mb-0-75);
+.work__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 7rem);
+  justify-content: center;
+  align-items: start;
+  gap: var(--mb-2) var(--mb-1-5);
 }
 
-.work__button:hover .button__icon {
-  transform: translateX(0.25rem);
+.work__item {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  row-gap: var(--mb-0-75);
+  width: 7rem;
+  text-align: center;
+  color: var(--text-color);
+  transition: 0.3s;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
-}
-
-.swiper-work-icon {
-  font-size: 2rem;
+.work__item:hover,
+.work__item:focus-visible {
   color: var(--first-color);
 }
 
-.swiper-button-prev {
-  left: -0.5rem;
+.work__thumb {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--container-color);
+  transition: 0.3s;
 }
 
-.swiper-button-next {
-  right: -0.5rem;
+/* Placeholder outline that disappears on its own once a thumb image is set */
+.work__thumb:empty {
+  border: 2px dashed var(--first-color);
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
+.work__item:hover .work__thumb,
+.work__item:focus-visible .work__thumb {
+  transform: scale(1.06);
 }
 
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
+.work__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
-  outline: none;
+/* stretch overrides the parent's justify-items: center, which would otherwise
+   size this to its text and let a long name spill past the card */
+.work__name {
+  justify-self: stretch;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  overflow-wrap: anywhere;
 }
+
+/*==================== PROJECT PAGE ====================*/
+.project__back {
+  display: inline-flex;
+  align-items: center;
+  column-gap: var(--mb-0-25);
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: var(--mb-2);
+}
+
+.project__back:hover {
+  color: var(--first-color);
+}
+
+.project__thumb {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--container-color);
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__thumb:empty {
+  border: 2px dashed var(--first-color);
+}
+
+.project__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-5);
+  overflow-wrap: anywhere;
+}
+
+.project__meta {
+  display: flex;
+  column-gap: var(--mb-0-5);
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__meta span + span::before {
+  content: "·";
+  margin-right: var(--mb-0-5);
+}
+
+.project__description {
+  margin-bottom: var(--mb-2);
+}
+
+.project__body {
+  max-width: 40rem;
+}
+
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
@@ -875,7 +940,6 @@ img {
   }
 
   .skills_container,
-  .work__content,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -899,7 +963,7 @@ img {
     .section {
       padding: 6rem 0 2rem;
     }
-    .section__subtitle {
+    .section__title {
       margin-bottom: 4rem;
     }
     .header {
@@ -962,12 +1026,6 @@ img {
     .qualification__sections {
       grid-template-columns: 0.5fr;
     }
-    .work__img {
-      width: 320px;
-    }
-    .work__content {
-      align-items: center;
-    }
     .footer__container {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -1005,23 +1063,6 @@ img {
   .home__social {
     transform: translateX(-6rem);
   }
-  .work__content {
-    column-gap: 5rem;
-  }
-
-  .swiper-work-icon {
-    font-size: 3.5rem;
-  }
-  .swiper-button-prev {
-    left: -3.5rem;
-  }
-  .swiper-button-next {
-    right: -3.5rem;
-  }
-  .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -4.5rem;
-  }
-
   .contact__form {
     width: 460px;
   }
@@ -1030,13 +1071,3 @@ img {
   }
 }
 
-/*==================== IMAGE PLACEHOLDERS ====================*/
-/* Neutral boxes standing in for the template's images */
-.img-placeholder {
-  background-color: var(--first-color-lighter);
-  border: 1px dashed var(--first-color);
-}
-
-.work__img.img-placeholder {
-  aspect-ratio: 4 / 3;
-}
