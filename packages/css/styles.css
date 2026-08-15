@@ -593,7 +593,69 @@ img {
 }
 
 /*==================== WORK ====================*/
+/* The panel itself is drawn in CSS so it can be any size; the decorations are
+   overlaid at their own proportions and never stretch with it. */
+.work__panel {
+  --vine-scale: 0.7;
+  --vine-out: 0.4rem;
+  --worm-width: 7rem;
+  position: relative;
+  width: min(34rem, 100% - 3rem);
+  margin-inline: auto;
+  padding: var(--mb-2-5);
+  border-radius: 1rem;
+  background-color: #1c2f33;
+}
+
+.work__worm {
+  position: absolute;
+  top: calc(var(--worm-width) * -0.23);
+  left: calc(var(--worm-width) * -0.08);
+  width: var(--worm-width);
+  pointer-events: none;
+}
+
+/* One sprite sheet, three windows onto it. Every number is the vine's measured
+   position in vines-frame.png, multiplied by --vine-scale. */
+.work__vine {
+  position: absolute;
+  background-image: url("../images/vines-frame.png");
+  background-repeat: no-repeat;
+  background-size: calc(800px * var(--vine-scale)) calc(1000px * var(--vine-scale));
+  pointer-events: none;
+}
+
+.work__vine--top-right {
+  top: calc(var(--vine-out) * -0.5);
+  right: calc(var(--vine-out) * -1);
+  width: calc(100px * var(--vine-scale));
+  height: calc(124px * var(--vine-scale));
+  background-position: calc(-674px * var(--vine-scale))
+    calc(-40px * var(--vine-scale));
+}
+
+.work__vine--left {
+  top: 29%;
+  left: calc(var(--vine-out) * -1);
+  width: calc(25px * var(--vine-scale));
+  height: calc(160px * var(--vine-scale));
+  background-position: calc(-28px * var(--vine-scale))
+    calc(-301px * var(--vine-scale));
+}
+
+.work__vine--right {
+  top: 43%;
+  right: calc(var(--vine-out) * -1);
+  width: calc(69px * var(--vine-scale));
+  height: calc(126px * var(--vine-scale));
+  background-position: calc(-703px * var(--vine-scale))
+    calc(-427px * var(--vine-scale));
+}
+
+/* Sits above the decorations so a vine can never overlap a project card */
 .work__container {
+  position: relative;
+  z-index: 1;
   row-gap: 3rem;
 }
 
@@ -631,12 +693,13 @@ img {
   color: var(--first-color);
 }
 
+/* Darker than the panel behind it, so an empty circle still reads as a shape */
 .work__thumb {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   transition: 0.3s;
 }
 
@@ -889,6 +952,11 @@ img {
     padding: 2rem 0.25rem 4rem;
   }
 
+  .work__panel {
+    width: min(34rem, 100% - 2rem);
+    padding: var(--mb-1-5);
+  }
+
   .nav__list {
     column-gap: 0;
   }
@@ -1048,6 +1116,13 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .work__panel {
+    --vine-scale: 0.85;
+    --vine-out: 0.5rem;
+    --worm-width: 9rem;
+    width: min(42rem, 100% - 3rem);
+  }
+
   body {
     margin: 0;
   }
