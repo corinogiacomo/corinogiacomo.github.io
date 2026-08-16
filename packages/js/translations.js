@@ -124,7 +124,6 @@ window.TRANSLATIONS = {
 
     project: {
       back: "Back to work",
-      visit: "Visit project",
       notFound: "Project not found.",
     },
 
@@ -274,7 +273,6 @@ window.TRANSLATIONS = {
 
     project: {
       back: "実績一覧へ戻る",
-      visit: "プロジェクトを見る",
       notFound: "プロジェクトが見つかりませんでした。",
     },
 

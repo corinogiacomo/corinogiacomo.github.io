@@ -31,11 +31,18 @@
     document.getElementById("project-thumb").appendChild(img);
   }
 
-  const link = document.getElementById("project-link");
-  if (project.url) {
-    link.href = project.url;
-    link.hidden = false;
+  if (project.video) {
+    const frame = document.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + project.video;
+    frame.loading = "lazy";
+    frame.allow =
+      "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    frame.allowFullscreen = true;
+    frame.dataset.i18nAttr = "title:" + base + ".title";
+    document.getElementById("project-video").appendChild(frame);
   }
+
+  carousel.mount(document.getElementById("project-carousel"), project.carousel);
 
   // i18n owns document.title, so re-apply ours after every language change
   function syncTitle() {
