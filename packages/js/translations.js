@@ -93,33 +93,6 @@ window.TRANSLATIONS = {
         mobile: "Mobile Games / Apps",
         jam: "Game Jams",
       },
-      projects: {
-        "vr-project-1": {
-          title: "Kamitsubaki City VR",
-          description:
-            "What the project is, your role on it, and the technologies used to build it.",
-        },
-        "mobile-project-1": {
-          title: "Dino Merge Mania",
-          description:
-            "What the project is, your role on it, and the technologies used to build it.",
-        },
-        "mobile-project-2": {
-          title: "Hamburger Tower",
-          description:
-            "What the project is, your role on it, and the technologies used to build it.",
-        },
-        "mobile-project-3": {
-          title: "Kanji Narau",
-          description:
-            "What the project is, your role on it, and the technologies used to build it.",
-        },
-        "jam-project-1": {
-          title: "Angler",
-          description:
-            "What the project is, your role on it, and the technologies used to build it.",
-        },
-      },
     },
 
     project: {
@@ -241,33 +214,6 @@ window.TRANSLATIONS = {
         vr: "VRゲーム",
         mobile: "モバイルゲーム・アプリ",
         jam: "ハッカソン",
-      },
-      projects: {
-        "vr-project-1": {
-          title: "神椿市建設中 VR",
-          description:
-            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
-        },
-        "mobile-project-1": {
-          title: "Dino Merge Mania",
-          description:
-            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
-        },
-        "mobile-project-2": {
-          title: "Hamburger Tower",
-          description:
-            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
-        },
-        "mobile-project-3": {
-          title: "Kanji Narau",
-          description:
-            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
-        },
-        "jam-project-1": {
-          title: "Angler",
-          description:
-            "プロジェクトの概要、担当した役割、使用した技術を記載します。",
-        },
       },
     },
 
