@@ -23,6 +23,9 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
+  /* Corner rounding shared by the work grid tiles and the project page hero */
+  --thumb-radius: 22%;
+
   /*========== Font and typography ==========*/
   --body-font: "Poppins", "Noto Sans JP", sans-serif;
 
@@ -604,12 +607,14 @@ img {
   --vine-scale: 0.7;
   --vine-out: 0.4rem;
   --worm-width: 7rem;
+  --item-width: 7rem;
+  --thumb-size: 6rem;
   position: relative;
   width: min(34rem, 100% - 3rem);
   margin-inline: auto;
   padding: var(--mb-2-5);
   border-radius: 1rem;
-  background-color: #1c2f33;
+  background-color: hsl(var(--hue-color), 29%, 20%);
 }
 
 .work__worm {
@@ -676,7 +681,7 @@ img {
 
 .work__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 7rem);
+  grid-template-columns: repeat(auto-fit, var(--item-width));
   justify-content: center;
   align-items: start;
   gap: var(--mb-2) var(--mb-1-5);
@@ -687,9 +692,9 @@ img {
   justify-items: center;
   align-content: start;
   row-gap: var(--mb-0-75);
-  width: 7rem;
+  width: var(--item-width);
   text-align: center;
-  color: var(--text-color);
+  color: var(--title-color);
   transition: 0.3s;
 }
 
@@ -698,11 +703,12 @@ img {
   color: var(--first-color);
 }
 
-/* Darker than the panel behind it, so an empty circle still reads as a shape */
+/* Darker than the panel behind it, so an empty tile still reads as a shape */
 .work__thumb {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  border: 2px solid #fff;
+  border-radius: var(--thumb-radius);
   overflow: hidden;
   background-color: var(--body-color);
   transition: 0.3s;
@@ -750,7 +756,8 @@ img {
 .project__thumb {
   width: 9rem;
   height: 9rem;
-  border-radius: 50%;
+  border: 2px solid #fff;
+  border-radius: var(--thumb-radius);
   overflow: hidden;
   background-color: var(--container-color);
   margin-bottom: var(--mb-1-5);
@@ -1011,6 +1018,12 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  .work__panel {
+    --item-width: 9.5rem;
+    --thumb-size: 8.5rem;
+    width: min(40rem, 100% - 3rem);
+  }
+
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1136,7 +1149,7 @@ img {
     --vine-scale: 0.85;
     --vine-out: 0.5rem;
     --worm-width: 9rem;
-    width: min(42rem, 100% - 3rem);
+    width: min(50rem, 100% - 3rem);
   }
 
   body {

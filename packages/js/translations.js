@@ -95,27 +95,27 @@ window.TRANSLATIONS = {
       },
       projects: {
         "vr-project-1": {
-          title: "VR Project",
+          title: "Kamitsubaki City VR",
           description:
             "What the project is, your role on it, and the technologies used to build it.",
         },
         "mobile-project-1": {
-          title: "Mobile Project One",
+          title: "Dino Merge Mania",
           description:
             "What the project is, your role on it, and the technologies used to build it.",
         },
         "mobile-project-2": {
-          title: "Mobile Project Two",
+          title: "Hamburger Tower",
           description:
             "What the project is, your role on it, and the technologies used to build it.",
         },
         "mobile-project-3": {
-          title: "Mobile Project Three",
+          title: "Kanji Narau",
           description:
             "What the project is, your role on it, and the technologies used to build it.",
         },
         "jam-project-1": {
-          title: "Game Jam Project",
+          title: "Angler",
           description:
             "What the project is, your role on it, and the technologies used to build it.",
         },
@@ -245,27 +245,27 @@ window.TRANSLATIONS = {
       },
       projects: {
         "vr-project-1": {
-          title: "VRプロジェクト",
+          title: "神椿市建設中 VR",
           description:
             "プロジェクトの概要、担当した役割、使用した技術を記載します。",
         },
         "mobile-project-1": {
-          title: "モバイルプロジェクト 1",
+          title: "Dino Merge Mania",
           description:
             "プロジェクトの概要、担当した役割、使用した技術を記載します。",
         },
         "mobile-project-2": {
-          title: "モバイルプロジェクト 2",
+          title: "Hamburger Tower",
           description:
             "プロジェクトの概要、担当した役割、使用した技術を記載します。",
         },
         "mobile-project-3": {
-          title: "モバイルプロジェクト 3",
+          title: "Kanji Narau",
           description:
             "プロジェクトの概要、担当した役割、使用した技術を記載します。",
         },
         "jam-project-1": {
-          title: "ハッカソン作品",
+          title: "Angler",
           description:
             "プロジェクトの概要、担当した役割、使用した技術を記載します。",
         },
