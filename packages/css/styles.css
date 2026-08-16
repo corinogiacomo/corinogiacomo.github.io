@@ -533,9 +533,12 @@ img {
   column-gap: 1.5rem;
 }
 
+/* keep-all confines Japanese wrapping to the U+200B points in translations.js;
+   overflow-wrap is the last resort so nothing spills out of the column */
 .qualification__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  word-break: keep-all;
   overflow-wrap: anywhere;
 }
 
@@ -544,6 +547,8 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color);
   margin-bottom: var(--mb-0-5);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 .qualification__description {
@@ -1015,7 +1020,7 @@ img {
 
   .qualification__sections {
     display: grid;
-    grid-template-columns: 0.6fr;
+    grid-template-columns: 0.8fr;
     justify-content: center;
   }
 
@@ -1092,7 +1097,7 @@ img {
     }
 
     .qualification__sections {
-      grid-template-columns: 0.5fr;
+      grid-template-columns: 0.75fr;
     }
     .footer__container {
       grid-template-columns: repeat(3, 1fr);

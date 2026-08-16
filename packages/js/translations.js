@@ -57,29 +57,29 @@ window.TRANSLATIONS = {
       work: "Work",
       edu1: {
         name: "Istituto Tecnico Ettore Majorana",
-        detail: "High School - Italy",
+        detail: "High School (Italy)",
         date: "2013 - 2018",
       },
       edu2: {
-        name: "京進ランゲージアカデミー京都中央",
-        detail: "Japanese Language School - Kyoto",
+        name: "京進ランゲージ\u200Bアカデミー\u200B京都中央",
+        detail: "Japanese Language School (Kyoto)",
         date: "Jul 2019 - Mar 2020",
       },
       edu3: {
-        name: "東京デザインテクノロジーセンター専門学校",
-        detail: "Vocational school, Game Development - Tokyo",
+        name: "東京デザイン\u200Bテクノロジー\u200Bセンター\u200B専門学校",
+        detail: "Vocational School, Game Development (Tokyo)",
         date: "Apr 2021 - Apr 2024",
       },
       job1: {
         name: "Ni.Co S.r.l",
-        detail: "Web Programmer - Turin, Italy",
+        detail: "Web Programmer (Turin, Italy)",
         description:
           "Internship. Web programmer for a bank surveillance application.",
         date: "Dec 2018 - May 2019",
       },
       job2: {
         name: "Mankind Games",
-        detail: "Game Programmer - Tokyo, Japan",
+        detail: "Game Programmer (Tokyo, Japan)",
         description:
           "Game programmer working with Unity3D and Unreal Engine 4.",
         date: "Apr 2024 - Present",
@@ -205,29 +205,29 @@ window.TRANSLATIONS = {
       work: "職歴",
       edu1: {
         name: "Istituto Tecnico Ettore Majorana",
-        detail: "高等学校 - イタリア",
+        detail: "高等学校（イタリア）",
         date: "2013年 - 2018年",
       },
       edu2: {
-        name: "京進ランゲージアカデミー京都中央",
-        detail: "日本語学校 - 京都",
+        name: "京進ランゲージ\u200Bアカデミー\u200B京都中央",
+        detail: "日本語学校（京都）",
         date: "2019年7月 - 2020年3月",
       },
       edu3: {
-        name: "東京デザインテクノロジーセンター専門学校",
-        detail: "専門学校ゲーム開発 - 東京",
+        name: "東京デザイン\u200Bテクノロジー\u200Bセンター\u200B専門学校",
+        detail: "ゲーム開発専門学校（東京）",
         date: "2021年4月 - 2024年4月",
       },
       job1: {
         name: "Ni.Co S.r.l",
-        detail: "Webプログラマー - トリノ、イタリア",
+        detail: "Webプログラマー（トリノ、イタリア）",
         description:
           "インターンシップ。銀行の監視アプリケーションのWebプログラマー。",
         date: "2018年12月 - 2019年5月",
       },
       job2: {
         name: "Mankind Games",
-        detail: "ゲームプログラマー - 東京、日本",
+        detail: "ゲームプログラマー（東京、日本）",
         description:
           "Unity3DとUnreal Engine 4を使用するゲームプログラマー。",
         date: "2024年4月 - 現在",
