@@ -43,9 +43,7 @@ window.TRANSLATIONS = {
       },
       qa: {
         title: "Development & QA",
-        unit: "Unit Testing",
-        integration: "Integration Testing",
-        testCode: "Test Code Creation",
+        testing: "Test Code Creation (Unit & Integration)",
         performance: "Performance Tuning",
       },
       tools: {
@@ -193,9 +191,7 @@ window.TRANSLATIONS = {
       },
       qa: {
         title: "開発・品質保証",
-        unit: "単体テスト",
-        integration: "結合テスト",
-        testCode: "テストコード作成",
+        testing: "テストコード作成（単体・結合）",
         performance: "パフォーマンスチューニング",
       },
       tools: {
